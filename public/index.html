@@ -64,7 +64,7 @@
     function translateText() {
       let text = document.getElementById('body').value;
       let lang = document.getElementById('selectLang').value;
-      fetch('https://us-central1-twitter-post-289d7.cloudfunctions.net/translate?text=' + text + '&lang=' + lang)
+      fetch('https://your.cloudfunctions.net/translate?text=' + text + '&lang=' + lang)
         .then(response => response.text())
         .then(response => {
           document.getElementById('translateResult').innerHTML = response;
@@ -80,7 +80,7 @@
         tweettext: document.getElementById('translateResult').innerText
       }
 
-      fetch('https://us-central1-twitter-post-289d7.cloudfunctions.net/postTweet', {
+      fetch('https://your.cloudfunctions.net/postTweet', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
