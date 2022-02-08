@@ -64,7 +64,7 @@
     function translateText() {
       let text = document.getElementById('body').value;
       let lang = document.getElementById('selectLang').value;
-      fetch('https://your.cloudfunctions.net/translate?text=' + text + '&lang=' + lang)
+      fetch('your.cloudfunctions.net/translate?text=' + text + '&lang=' + lang)
         .then(response => response.text())
         .then(response => {
           document.getElementById('translateResult').innerHTML = response;
@@ -80,7 +80,7 @@
         tweettext: document.getElementById('translateResult').innerText
       }
 
-      fetch('https://your.cloudfunctions.net/postTweet', {
+      fetch('your.cloudfunctions.net/postTweet', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -127,7 +127,7 @@
         </div>
 
         <div class="form-group my-3">
-          <button id="signout" name="signout" onclick="signOut()"  type="button" class="btn btn-outline-primary">サインアウト</button>
+          <button id="signout" name="signout" onclick="signOut()"  type="button" class="btn btn-outline-primary">Sign Out</button>
         </div>
 
         </div>

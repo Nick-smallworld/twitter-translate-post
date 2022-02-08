@@ -14,9 +14,6 @@ const deepl_key = functions.config().env.deepl_key;
 
 // define Twitter' endpoint URLs
 
-const requestTokenURL = 'https://api.twitter.com/oauth/request_token?oauth_callback=oob&x_auth_access_type=write';
-const authorizeURL = 'https://api.twitter.com/oauth/authorize';
-const accessTokenURL = 'https://api.twitter.com/oauth/access_token';
 const endpointURL = `https://api.twitter.com/2/tweets`;
 
 // generate oauth header
