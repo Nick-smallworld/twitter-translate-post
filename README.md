@@ -15,7 +15,7 @@ With this app user can translate tweet into multiple languages and tweet it.
 - Deep L developer account
 -- https://www.deepl.com/pro-api
 
-## Iniitial Settings
+## Initial Settings
 
 ### Environmental variables
 
@@ -49,8 +49,8 @@ Please be careful the secret information is written in the JSON file. Don't forg
 
 ### Modify functions URL's
 
-Index.html in the public directory, two functions are written.
-Be sure modify the URL with your own Firebase function's URL.
+Index.html in the public directory, the URL's of two functions are written.
+Modify the URL with your own Firebase function's URL.
 
 ```
 fetch('your.cloudfunctions.net
