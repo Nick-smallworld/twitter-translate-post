@@ -56,5 +56,12 @@ Modify the URL with your own Firebase function's URL.
 fetch('your.cloudfunctions.net
 ```
 
+### Redirect URI
 
+Because this app uses OAuth authentication, you need to set your redirect URI to your Twitter developer app's setting.
+Edit your "User authentication settings" on Twitter developer's dashoboard, and fill in the form with your Redirect URI (ordinary the URL of the Frirebae hosting).
+
+### version of "got"
+
+When you install the node package "got", you need to specify the version "11.x.x". The code won't work when using the leatest version. I'm looking into the problem and modify if the cause of the issue found.
 
